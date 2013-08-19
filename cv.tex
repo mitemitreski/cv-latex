@@ -18,9 +18,20 @@
 
 \usepackage[svgnames]{xcolor}
 
+\usepackage[utf8]{inputenc}
+
+\usepackage[T2A]{fontenc}
+\usepackage[english]{babel}
+\usepackage[pdftex]{graphicx}
+
+
+\usepackage{wrapfig}
 \usepackage{framed}
 
 \usepackage{tocloft}
+
+
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
 %-----------------------------------------------------------
 
@@ -81,21 +92,17 @@
 }
 
 \newcommand{\ressubheading}[4]{
-
-\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
-
-		\textbf{#1} & #2 \\
-
-		\textit{#3} & \textit{#4} \\
-
-\end{tabular*}\vspace{-6pt}}
+  \textbf{#1}  #2\\
+  \textit{#3} \textit{#4}\\
+}
 
 %-----------------------------------------------------------
 
 \begin{document}
 
+ 
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-
+ &  \raisebox{10pt}{ \includegraphics[scale=0.4]{me.jpg}} \\
 \textbf{\Large Mite Mitreski} & \textbf{\today} \\
 Software Engineer   & mite.mitreski@gmail.com \\
 R.Novicic 74 Ohrid, Macedonia & blog.mitemitreski.com  \\
@@ -114,9 +121,9 @@ R.Novicic 74 Ohrid, Macedonia & blog.mitemitreski.com  \\
   \resitem {{\bf Software engineering}} \\ 
 	 	Agile methodologies, Test Driven Development, Continuous Integration, Object-Oriented Design
   \resitem {{\bf Current technologies of choice include}} \\ 
-	 	Java, JavaScript, Spring stack, Java EE stack, Node.js 
+	 	Java, JavaScript, Spring, Java EE, Node.js 
   \resitem{{\bf Regularly works with}}\\
-	 	Bash, Zsh , Linux, HTML, Vim, Eclipse, Netbeans , Sublime Text
+	 	Bash, Zsh , Linux, HTML, Vim, Eclipse, Netbeans, Sublime Text
   \resitem {{\bf Has some work experience in}} \\ 
 	 	 C\#, .NET, Pyhton2.x 
   \resitem {{\bf Knows the syntax of}} \\  
@@ -132,19 +139,19 @@ R.Novicic 74 Ohrid, Macedonia & blog.mitemitreski.com  \\
 
 \begin{itemize}
 
-\item [] 
-
-	\ressubheading{Netcetera AG}{Skopje, MK}{Software Engineer}{August 2011 - Present}
-
+\item []  
+\ressubheading{Netcetera AG}{Skopje, MK}{Software Engineer}{August 2011 - Present}
 	\begin{itemize}
       \resitem{ Work on domain specific solutions mostly for the financial sector in Switzerland}
-      \resitem{ Work on Intranet integration software}
-      \resitem{ Mentored interns and new employees }
+      \resitem{ Work on Intranet integration software and customizations of Confluence}     
+      \resitem{ Development of a common integration project for JavaScript build infrastructure into Java ecosystem}
+      \resitem{ Mentioning of interns and new employees }
+      \resitem{ DevOps and change management}
 	\end{itemize}
 
 \item []
 
-	\ressubheading{Semos Edukacija }{Skopje, MK}{ Oracle Certified Java Trainer }{March 2010 - September 2013}
+	\ressubheading{Semos Edukacija }{Skopje, MK}{ Oracle Certified Java Trainer }{March 2010 - September 2012}
 
 	\begin{itemize}
  
@@ -152,6 +159,7 @@ R.Novicic 74 Ohrid, Macedonia & blog.mitemitreski.com  \\
       \resitem{Java Programming Language, Java SE 6 (SL 275 SE6) }
       \resitem{Developing Applications With the Java SE 6 Platform (SL 285 SE6)}
       \resitem{Developing Applications for the Java EE 6 Platform (FJ 310 EE6)}
+      \resitem{Customized courses on topics related to Java EE}
 
 	\end{itemize}
 
